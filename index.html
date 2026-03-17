@@ -11,7 +11,7 @@
        SEO: Primary meta tags
   ============================================================ -->
   <title>True Vintage Jewellery | Authentic 9ct Gold & Silver Charms, London</title>
-  <meta name="description" content="Authentic vintage 9ct gold charms, sterling silver bracelet charms, gemstone rings and lockets. London-based Etsy Star Seller with 4.8+ rating. Shop vintage jewellery London." />
+  <meta name="description" content="Authentic vintage 9ct gold charms, sterling silver bracelet charms, gemstone rings and lockets. London-based Etsy Star Seller with 4.9 rating & 5,000+ sales. Shop vintage jewellery London." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://truevintagejewellery.com/" />
 
@@ -48,7 +48,7 @@
         "@type": "LocalBusiness",
         "name": "True Vintage Jewellery",
         "url": "https://truevintagejewellery.com",
-        "description": "Authentic vintage 9ct gold charms, sterling silver bracelet charms, gemstone rings and lockets. London-based Etsy Star Seller with 4.8+ rating.",
+        "description": "Authentic vintage 9ct gold charms, sterling silver bracelet charms, gemstone rings and lockets. London-based Etsy Star Seller with 4.9 rating and 5,000+ sales.",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "London",
@@ -60,8 +60,8 @@
         ],
         "aggregateRating": {
           "@type": "AggregateRating",
-          "ratingValue": "4.8",
-          "reviewCount": "143"
+          "ratingValue": "4.9",
+          "reviewCount": "5000"
         }
       },
       {
@@ -409,6 +409,121 @@
     }
 
     /* ================================================================
+       STATS ROW
+    ================================================================ */
+    #stats-row {
+      padding: 3.5rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    .stat-item {
+      padding: 1.25rem 0.5rem;
+    }
+
+    .stat-number {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 0.375rem;
+    }
+
+    .stat-label {
+      font-size: 0.8125rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--mid-grey);
+    }
+
+    /* ================================================================
+       TESTIMONIALS
+    ================================================================ */
+    #testimonials {
+      padding: 5rem 0;
+      background: var(--cream-card);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .testimonials-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    @media (max-width: 900px) {
+      .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 560px) {
+      .testimonials-grid { grid-template-columns: 1fr; }
+    }
+
+    .review-card {
+      background: var(--cream);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1.625rem 1.5rem 1.375rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.875rem;
+    }
+
+    .review-stars {
+      color: var(--gold);
+      font-size: 0.875rem;
+      letter-spacing: 0.1em;
+    }
+
+    .review-quote {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 1.05rem;
+      color: var(--charcoal);
+      line-height: 1.65;
+      flex-grow: 1;
+    }
+
+    .review-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+
+    .review-author {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--charcoal);
+    }
+
+    .review-item {
+      font-size: 0.775rem;
+      color: var(--mid-grey);
+      font-style: italic;
+    }
+
+    .testimonials-cta {
+      text-align: center;
+      margin-top: 2.5rem;
+    }
+
+    /* ================================================================
        CATEGORIES / FEATURED
     ================================================================ */
     #categories {
@@ -701,6 +816,7 @@
         <ul class="nav-links" id="nav-menu" role="list">
           <li><a href="#categories">Shop</a></li>
           <li><a href="#story">Our Story</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
           <li><a href="#instagram">Instagram</a></li>
         </ul>
 
@@ -723,7 +839,7 @@
     <section id="hero" aria-label="Hero">
       <div class="container">
         <div class="hero-content reveal">
-          <p class="hero-eyebrow">Etsy Star Seller &middot; London, UK</p>
+          <p class="hero-eyebrow">4.9&#9733; Star Seller &middot; 5,000+ Sales &middot; London, UK</p>
           <div class="hero-rule" aria-hidden="true"></div>
           <h1 class="hero-headline">Authentic Vintage<br>Charms &amp; Jewellery</h1>
           <p class="hero-subline">
@@ -749,7 +865,11 @@
     <div id="trust-bar" role="complementary" aria-label="Trust signals">
       <div class="container">
         <div class="trust-inner">
-          <span class="trust-item">&#11088; 4.8 Star Seller</span>
+          <span class="trust-item">&#11088; 4.9 Star Seller</span>
+          <span class="trust-divider" aria-hidden="true">|</span>
+          <span class="trust-item">&#127381; 5,000+ Sales</span>
+          <span class="trust-divider" aria-hidden="true">|</span>
+          <span class="trust-item">&#128197; 14 Years on Etsy</span>
           <span class="trust-divider" aria-hidden="true">|</span>
           <span class="trust-item">&#127468;&#127463; London, UK</span>
           <span class="trust-divider" aria-hidden="true">|</span>
@@ -761,6 +881,32 @@
         </div>
       </div>
     </div>
+
+    <!-- ================================================================
+         STATS ROW
+    ================================================================ -->
+    <section id="stats-row" aria-label="Shop statistics">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item reveal">
+            <p class="stat-number">4.9&#9733;</p>
+            <p class="stat-label">Star Seller Rating</p>
+          </div>
+          <div class="stat-item reveal">
+            <p class="stat-number">5,000+</p>
+            <p class="stat-label">Happy Customers</p>
+          </div>
+          <div class="stat-item reveal">
+            <p class="stat-number">14</p>
+            <p class="stat-label">Years on Etsy</p>
+          </div>
+          <div class="stat-item reveal">
+            <p class="stat-number">143+</p>
+            <p class="stat-label">Unique Listings</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- ================================================================
          CATEGORIES / FEATURED
@@ -779,7 +925,7 @@
         <div class="categories-grid">
 
           <!-- Card 1: Vintage Gold Charms -->
-          <a href="https://www.etsy.com/uk/shop/TrueVintageCharms"
+          <a href="https://www.etsy.com/uk/shop/TrueVintageCharms?section_id=10472413"
              target="_blank"
              rel="noopener noreferrer"
              class="category-card reveal"
@@ -793,7 +939,7 @@
           </a>
 
           <!-- Card 2: Vintage Silver Charms -->
-          <a href="https://www.etsy.com/uk/shop/TrueVintageCharms"
+          <a href="https://www.etsy.com/uk/shop/TrueVintageCharms?section_id=10472409"
              target="_blank"
              rel="noopener noreferrer"
              class="category-card reveal"
@@ -807,7 +953,7 @@
           </a>
 
           <!-- Card 3: Enamel Charms -->
-          <a href="https://www.etsy.com/uk/shop/TrueVintageCharms"
+          <a href="https://www.etsy.com/uk/shop/TrueVintageCharms?section_id=18782287"
              target="_blank"
              rel="noopener noreferrer"
              class="category-card reveal"
@@ -821,7 +967,7 @@
           </a>
 
           <!-- Card 4: Gemstone Rings -->
-          <a href="https://www.etsy.com/uk/shop/TrueVintageCharms"
+          <a href="https://www.etsy.com/uk/shop/TrueVintageCharms?section_id=12561756"
              target="_blank"
              rel="noopener noreferrer"
              class="category-card reveal"
@@ -835,7 +981,7 @@
           </a>
 
           <!-- Card 5: Lockets & Pendants -->
-          <a href="https://www.etsy.com/uk/shop/TrueVintageCharms"
+          <a href="https://www.etsy.com/uk/shop/TrueVintageCharms?section_id=17029024"
              target="_blank"
              rel="noopener noreferrer"
              class="category-card reveal"
@@ -849,7 +995,7 @@
           </a>
 
           <!-- Card 6: Vintage Earrings -->
-          <a href="https://www.etsy.com/uk/shop/TrueVintageCharms"
+          <a href="https://www.etsy.com/uk/shop/TrueVintageCharms?section_id=32328866"
              target="_blank"
              rel="noopener noreferrer"
              class="category-card reveal"
@@ -870,6 +1016,89 @@
              rel="noopener noreferrer"
              class="btn btn-primary">
             See All Listings on Etsy &rarr;
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================
+         TESTIMONIALS
+    ================================================================ -->
+    <section id="testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <header class="testimonials-header reveal">
+          <p class="section-label">Customer Reviews</p>
+          <h2 class="section-title" id="testimonials-heading">What Our Customers Say</h2>
+          <p class="section-subtitle" style="margin: 0 auto;">
+            Over 5,000 sales and 14 years on Etsy &mdash; here&rsquo;s what a few of our customers had to say.
+          </p>
+        </header>
+
+        <div class="testimonials-grid">
+
+          <div class="review-card reveal">
+            <p class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+            <p class="review-quote">&ldquo;The sellers have outstanding customer service and went above and beyond to make sure I get a fast delivery! The item came as described, packaged with care, and with great communication with the shop!&rdquo;</p>
+            <div class="review-meta">
+              <span class="review-author">Etsy buyer &mdash; December 2025</span>
+              <span class="review-item">Vintage Silver Lion in a Circus Tent Charm</span>
+            </div>
+          </div>
+
+          <div class="review-card reveal">
+            <p class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+            <p class="review-quote">&ldquo;Wonderful seller &mdash; the ring was even better than the photo.&rdquo;</p>
+            <div class="review-meta">
+              <span class="review-author">Stamatoula &mdash; March 2026</span>
+              <span class="review-item">Large Vintage 9ct Gold Oval Amethyst Ring</span>
+            </div>
+          </div>
+
+          <div class="review-card reveal">
+            <p class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+            <p class="review-quote">&ldquo;So adorable, just as described. Love it! &#10084;&#65039;&rdquo;</p>
+            <div class="review-meta">
+              <span class="review-author">Etsy buyer &mdash; February 2026</span>
+              <span class="review-item">9ct Gold Jonah and The Whale Opening Vintage Enamel Charm</span>
+            </div>
+          </div>
+
+          <div class="review-card reveal">
+            <p class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+            <p class="review-quote">&ldquo;Great charm and fast shipping, thank you!&rdquo;</p>
+            <div class="review-meta">
+              <span class="review-author">Maggie &mdash; December 2025</span>
+              <span class="review-item">Vintage 9ct Gold Why Worry Spinner Charm</span>
+            </div>
+          </div>
+
+          <div class="review-card reveal">
+            <p class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+            <p class="review-quote">&ldquo;Such a gorgeous little item!&rdquo;</p>
+            <div class="review-meta">
+              <span class="review-author">Lanny &mdash; December 2025</span>
+              <span class="review-item">Vintage 9ct Gold Chair Charm or Pendant</span>
+            </div>
+          </div>
+
+          <div class="review-card reveal">
+            <p class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+            <p class="review-quote">&ldquo;Thank you so much, yay!&rdquo;</p>
+            <div class="review-meta">
+              <span class="review-author">Andrew &mdash; December 2025</span>
+              <span class="review-item">Small Vintage 9ct Gold Watering Can Charm</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="testimonials-cta reveal">
+          <a href="https://www.etsy.com/uk/shop/TrueVintageCharms#reviews"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="btn btn-outline">
+            Read All Reviews on Etsy &rarr;
           </a>
         </div>
 
@@ -905,7 +1134,7 @@
             </p>
 
             <ul class="story-highlights" aria-label="Shop highlights">
-              <li>Etsy Star Seller with a 4.8&thinsp;+ rating and 143 listings</li>
+              <li>4.9&#9733; Etsy Star Seller &mdash; 5,000+ sales over 14 years</li>
               <li>Only genuine vintage 9ct gold &amp; sterling silver</li>
               <li>Fast shipping from London, worldwide</li>
               <li>Excellent customer service &mdash; always happy to answer questions</li>
@@ -1008,7 +1237,7 @@
         <p class="footer-copy">
           &copy; <span id="footer-year"></span> True Vintage Jewellery. All rights reserved.
         </p>
-        <p class="footer-etsy-badge">&#11088; Etsy Star Seller</p>
+        <p class="footer-etsy-badge">&#11088; 4.9 Star Seller &middot; 5,000+ Sales</p>
       </div>
     </div>
   </footer>
