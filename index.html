@@ -312,14 +312,7 @@
       align-items: center;
       overflow: hidden;
 
-      /* ----------------------------------------------------------------
-         HERO BACKGROUND IMAGE
-         TODO: Replace the gradient below with your hero image:
-           background: url('/assets/images/hero-bg.jpg') center/cover no-repeat;
-         Recommended size: 1600×900px, warm flat-lay of charms on cream surface.
-         Keep the overlay ::after for text legibility.
-      ---------------------------------------------------------------- */
-      background: linear-gradient(135deg, #F5EDE0 0%, #EDD9B8 50%, #E8CFA0 100%);
+      background: url('/assets/images/sample_hero_charm.png') center/cover no-repeat;
     }
 
     /* Decorative overlay — keeps text readable over a real photo */
@@ -451,26 +444,11 @@
       box-shadow: var(--shadow-hover);
     }
 
-    /* ------------------------------------------------------------------
-       CATEGORY CARD IMAGE PLACEHOLDER
-       TODO: Replace each .card-image-placeholder div with an <img> tag:
-         <img src="/assets/images/charm-gold.jpg" alt="Vintage gold charms bracelet" />
-       See /assets/images/.gitkeep for recommended filenames and sizes.
-       Remove the placeholder styles below once real images are in place.
-    ------------------------------------------------------------------ */
-    .card-image-placeholder {
+    .card-img {
       width: 100%;
       aspect-ratio: 4 / 3;
-      background: linear-gradient(135deg, #EDD9B8, #D4B896);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.75rem;
-      font-weight: 500;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--brown);
-      opacity: 0.75;
+      object-fit: cover;
+      display: block;
     }
 
     .card-body {
@@ -527,27 +505,11 @@
       }
     }
 
-    /* ------------------------------------------------------------------
-       STORY / ABOUT IMAGE PLACEHOLDER
-       TODO: Replace the .story-image-placeholder div with a real <img>:
-         <img src="/assets/images/about-portrait.jpg"
-              alt="Vintage charm jewellery collection laid out on a cream surface" />
-       Suggested: a styled flat-lay of charms, or a portrait of the seller at work.
-    ------------------------------------------------------------------ */
-    .story-image-placeholder {
+    .story-img {
       width: 100%;
-      aspect-ratio: 4 / 5;
-      background: linear-gradient(160deg, #EDD9B8, #C9A060);
       border-radius: 4px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.75rem;
-      font-weight: 500;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--brown);
-      opacity: 0.7;
+      object-fit: cover;
+      display: block;
     }
 
     .story-text .section-subtitle {
@@ -814,15 +776,12 @@
         <div class="categories-grid">
 
           <!-- Card 1: Vintage Gold Charms -->
-          <!-- TODO: Replace placeholder div with <img src="/assets/images/charm-gold.jpg" alt="Vintage 9ct gold bracelet charms" /> -->
           <a href="https://www.etsy.com/uk/shop/TrueVintageCharms"
              target="_blank"
              rel="noopener noreferrer"
              class="category-card reveal"
              aria-label="Shop Vintage Gold Charms on Etsy">
-            <div class="card-image-placeholder" role="img" aria-label="Vintage Gold Charms – image coming soon">
-              Image coming soon
-            </div>
+            <img src="/assets/images/sample_gold_charms.png" alt="Vintage 9ct gold bracelet charms" class="card-img" />
             <div class="card-body">
               <h3 class="card-title">Vintage Gold Charms</h3>
               <p class="card-desc">Authentic 9ct gold charms — from animals and florals to rare hallmarked keepsakes.</p>
@@ -831,15 +790,12 @@
           </a>
 
           <!-- Card 2: Vintage Silver Charms -->
-          <!-- TODO: Replace placeholder div with <img src="/assets/images/charm-silver.jpg" alt="Vintage sterling silver bracelet charms" /> -->
           <a href="https://www.etsy.com/uk/shop/TrueVintageCharms"
              target="_blank"
              rel="noopener noreferrer"
              class="category-card reveal"
              aria-label="Shop Vintage Silver Charms on Etsy">
-            <div class="card-image-placeholder" role="img" aria-label="Vintage Silver Charms – image coming soon">
-              Image coming soon
-            </div>
+            <img src="/assets/images/sample_silver_charms.png" alt="Vintage sterling silver bracelet charms" class="card-img" />
             <div class="card-body">
               <h3 class="card-title">Vintage Silver Charms</h3>
               <p class="card-desc">Sterling silver bracelet charms full of character &mdash; perfect for building a charm bracelet with history.</p>
@@ -848,15 +804,12 @@
           </a>
 
           <!-- Card 3: Enamel Charms -->
-          <!-- TODO: Replace placeholder div with <img src="/assets/images/charm-enamel.jpg" alt="Vintage enamel charms in bright colours" /> -->
           <a href="https://www.etsy.com/uk/shop/TrueVintageCharms"
              target="_blank"
              rel="noopener noreferrer"
              class="category-card reveal"
              aria-label="Shop Enamel Charms on Etsy">
-            <div class="card-image-placeholder" role="img" aria-label="Enamel Charms – image coming soon">
-              Image coming soon
-            </div>
+            <img src="/assets/images/sample_enamel_charm.png" alt="Vintage enamel charms in bright colours" class="card-img" />
             <div class="card-body">
               <h3 class="card-title">Enamel Charms</h3>
               <p class="card-desc">Colourful and charming &mdash; vintage enamel pieces that bring a pop of personality to any bracelet.</p>
@@ -865,15 +818,12 @@
           </a>
 
           <!-- Card 4: Gemstone Rings -->
-          <!-- TODO: Replace placeholder div with <img src="/assets/images/rings-gemstone.jpg" alt="Vintage gemstone gold and silver rings" /> -->
           <a href="https://www.etsy.com/uk/shop/TrueVintageCharms"
              target="_blank"
              rel="noopener noreferrer"
              class="category-card reveal"
              aria-label="Shop Gemstone Rings on Etsy">
-            <div class="card-image-placeholder" role="img" aria-label="Gemstone Rings – image coming soon">
-              Image coming soon
-            </div>
+            <img src="/assets/images/sample_gemstone_rings.png" alt="Vintage gemstone gold and silver rings" class="card-img" />
             <div class="card-body">
               <h3 class="card-title">Gemstone Rings</h3>
               <p class="card-desc">Vintage rings set with garnets, amethysts, topazes and more &mdash; each with its own unique story.</p>
@@ -882,15 +832,12 @@
           </a>
 
           <!-- Card 5: Lockets & Pendants -->
-          <!-- TODO: Replace placeholder div with <img src="/assets/images/lockets.jpg" alt="Vintage gold and silver lockets and pendants" /> -->
           <a href="https://www.etsy.com/uk/shop/TrueVintageCharms"
              target="_blank"
              rel="noopener noreferrer"
              class="category-card reveal"
              aria-label="Shop Lockets and Pendants on Etsy">
-            <div class="card-image-placeholder" role="img" aria-label="Lockets & Pendants – image coming soon">
-              Image coming soon
-            </div>
+            <img src="/assets/images/sample_lockets_and_pendants.png" alt="Vintage gold and silver lockets and pendants" class="card-img" />
             <div class="card-body">
               <h3 class="card-title">Lockets &amp; Pendants</h3>
               <p class="card-desc">Beautiful vintage lockets &mdash; gold and silver pendants that hold a photo or a secret.</p>
@@ -899,15 +846,12 @@
           </a>
 
           <!-- Card 6: Vintage Earrings -->
-          <!-- TODO: Replace placeholder div with <img src="/assets/images/earrings.jpg" alt="Vintage gold and silver earrings" /> -->
           <a href="https://www.etsy.com/uk/shop/TrueVintageCharms"
              target="_blank"
              rel="noopener noreferrer"
              class="category-card reveal"
              aria-label="Shop Vintage Earrings on Etsy">
-            <div class="card-image-placeholder" role="img" aria-label="Vintage Earrings – image coming soon">
-              Image coming soon
-            </div>
+            <img src="/assets/images/sample_vintage_earrings.png" alt="Vintage gold and silver earrings" class="card-img" />
             <div class="card-body">
               <h3 class="card-title">Vintage Earrings</h3>
               <p class="card-desc">From delicate gold drops to bold silver studs &mdash; vintage earrings for every occasion.</p>
@@ -937,14 +881,9 @@
         <div class="story-inner">
 
           <!-- Image column -->
-          <!-- TODO: Replace .story-image-placeholder with:
-               <img src="/assets/images/about-portrait.jpg"
-                    alt="Vintage charm jewellery collection displayed on a cream fabric"
-                    style="width:100%; border-radius:4px; object-fit:cover;" />
-          -->
-          <div class="story-image-placeholder reveal" role="img" aria-label="About image – coming soon">
-            Image coming soon
-          </div>
+          <img src="/assets/images/sample_hero_image_ai.jpg"
+               alt="Vintage charm jewellery collection displayed on a cream fabric"
+               class="story-img reveal" />
 
           <!-- Text column -->
           <div class="story-text reveal">
