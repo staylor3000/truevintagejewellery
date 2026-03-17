@@ -1,0 +1,17 @@
+# Images Folder
+
+Place product and hero images here. Recommended filenames:
+
+- hero-bg.jpg          — Hero section background (suggested: 1600×900px, warm/jewellery flat-lay)
+- charm-gold.jpg       — Vintage Gold Charms category card (600×400px)
+- charm-silver.jpg     — Vintage Silver Charms category card (600×400px)
+- charm-enamel.jpg     — Enamel Charms category card (600×400px)
+- rings-gemstone.jpg   — Gemstone Rings category card (600×400px)
+- lockets.jpg          — Lockets & Pendants category card (600×400px)
+- earrings.jpg         — Vintage Earrings category card (600×400px)
+- about-portrait.jpg   — Optional: portrait or workspace photo for Story section
+- og-image.jpg         — Open Graph share image (1200×630px)
+
+Once you have images, update the src attributes in index.html.
+Each placeholder <div class="card-image-placeholder"> can be replaced with an <img> tag.
+See comments in index.html for exact locations.
