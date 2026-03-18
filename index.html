@@ -87,7 +87,7 @@
   ============================================================ -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
 
   <!-- ============================================================
        Styles
@@ -95,7 +95,7 @@
   <style>
     /* ---- CSS Custom Properties ---- */
     :root {
-      --bg-primary:   #F0F4F8;
+      --bg-primary:   #FFFFFF;
       --bg-secondary: #E8EEF4;
       --bg-dark:      #1C2B3A;
       --accent:       #8AABBC;
@@ -104,8 +104,8 @@
       --text-light:   #6B8394;
       --border:       #D0DCE6;
       --white:        #FFFFFF;
-      --font-serif:   'Cormorant Garamond', Georgia, serif;
-      --font-sans:    'Jost', system-ui, sans-serif;
+      --font-serif:   'Playfair Display', Georgia, serif;
+      --font-sans:    'Inter', system-ui, sans-serif;
       --transition:   0.3s ease;
     }
 
@@ -348,7 +348,7 @@
       justify-content: center;
       text-align: center;
       overflow: hidden;
-      background: radial-gradient(ellipse at 50% 40%, #E4EBF3 0%, var(--bg-primary) 70%);
+      background: radial-gradient(ellipse at 50% 40%, var(--bg-secondary) 0%, var(--bg-primary) 70%);
       padding-top: 72px;
     }
 
@@ -500,7 +500,7 @@
     ================================================================ */
     #testimonials {
       padding: 6.25rem 0;
-      background: var(--bg-dark);
+      background: var(--bg-primary);
     }
 
     .testimonials-header {
@@ -508,17 +508,17 @@
       margin-bottom: 4rem;
     }
 
-    .testimonials-header .section-label { color: var(--accent); }
-    .testimonials-header .section-title { color: var(--white); }
+    .testimonials-header .section-label { color: var(--text-light); }
+    .testimonials-header .section-title { color: var(--text-primary); }
     .testimonials-header .section-subtitle {
-      color: rgba(255,255,255,0.5);
+      color: var(--text-light);
       margin: 0 auto;
     }
 
     .testimonials-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 0;
+      gap: 1.5rem;
     }
 
     @media (max-width: 900px) {
@@ -529,26 +529,16 @@
     }
 
     .review-card {
-      padding: 2.5rem 2rem;
+      background: var(--bg-dark);
+      padding: 2.25rem 2rem;
       display: flex;
       flex-direction: column;
       gap: 1.25rem;
-      border-right: 1px solid rgba(255,255,255,0.07);
-      border-bottom: 1px solid rgba(255,255,255,0.07);
+      transition: box-shadow var(--transition), transform var(--transition);
     }
-
-    .review-card:nth-child(3n)                { border-right: none; }
-    .review-card:nth-last-child(-n+3)         { border-bottom: none; }
-
-    @media (max-width: 900px) {
-      .review-card:nth-child(3n)              { border-right: 1px solid rgba(255,255,255,0.07); }
-      .review-card:nth-child(2n)              { border-right: none; }
-      .review-card:nth-last-child(-n+3)       { border-bottom: 1px solid rgba(255,255,255,0.07); }
-      .review-card:nth-last-child(-n+2)       { border-bottom: none; }
-    }
-    @media (max-width: 560px) {
-      .review-card                            { border-right: none; }
-      .review-card:last-child                 { border-bottom: none; }
+    .review-card:hover {
+      box-shadow: 0 12px 32px rgba(28, 43, 58, 0.18);
+      transform: translateY(-3px);
     }
 
     .review-stars {
@@ -561,8 +551,8 @@
       font-family: var(--font-serif);
       font-style: italic;
       font-size: 1.05rem;
-      font-weight: 300;
-      color: rgba(255,255,255,0.85);
+      font-weight: 400;
+      color: rgba(255,255,255,0.88);
       line-height: 1.7;
       flex-grow: 1;
     }
@@ -578,10 +568,10 @@
     .review-author {
       font-family: var(--font-sans);
       font-size: 0.625rem;
-      font-weight: 400;
+      font-weight: 500;
       text-transform: uppercase;
       letter-spacing: 0.15em;
-      color: rgba(255,255,255,0.55);
+      color: rgba(255,255,255,0.6);
     }
 
     .review-item {
@@ -589,7 +579,7 @@
       font-size: 0.625rem;
       font-weight: 300;
       letter-spacing: 0.1em;
-      color: rgba(255,255,255,0.3);
+      color: rgba(255,255,255,0.32);
       font-style: normal;
     }
 
@@ -625,14 +615,18 @@
     }
 
     .category-card {
-      background: var(--white);
+      background: var(--bg-secondary);
       border: 1px solid var(--border);
       overflow: hidden;
       transition: all var(--transition);
       text-decoration: none;
       color: var(--text-primary);
     }
-    .category-card:hover { border-color: var(--accent); }
+    .category-card:hover {
+      border-color: var(--accent);
+      box-shadow: 0 10px 28px rgba(28, 43, 58, 0.1);
+      transform: translateY(-2px);
+    }
 
     .card-img {
       width: 100%;
